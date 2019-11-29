@@ -1,33 +1,42 @@
 import math
 
+
 def number_1():
     for i in range(2000, 3201):
         if i % 7 == 0 and i % 5 != 0:
             print(i, end=',')
-#number_1()
 
-#n = int(input("n= "))
+
+# number_1()
+
+# n = int(input("n= "))
 def number_2(n):
     fact = 1
     for i in range(1, n + 1):
         fact = fact * i
     print(fact)
-#number_2(n)
 
-#n = int(input("n= "))
+
+# number_2(n)
+
+# n = int(input("n= "))
 def number_3(n):
     mydict = {}
     for i in range(1, n + 1):
         mydict[i] = i * i
     print(mydict)
-#number_3(n)
+
+
+# number_3(n)
 
 def number_4():
     mylist = input().split(',')
     mytuple = tuple(mylist)
     print(mylist)
     print(mytuple)
-#number_4()
+
+
+# number_4()
 
 class Mystring:
     def __init__(self):
@@ -39,9 +48,10 @@ class Mystring:
     def printString(self):
         print(self.string.upper())
 
-#mystring = Mystring()
-#mystring.getString()
-#mystring.printString()
+
+# mystring = Mystring()
+# mystring.getString()
+# mystring.printString()
 
 def number_6():
     C = 50
@@ -50,8 +60,10 @@ def number_6():
     items = [x for x in input('D = ').split(',')]
     for D in items:
         val.append(str(int(round(math.sqrt(2 * C * float(D) / H)))))
-    print (','.join(val))
-#number_6()
+    print(','.join(val))
+
+
+# number_6()
 
 def number_7():
     x, y = map(int, input().split(','))
@@ -62,13 +74,17 @@ def number_7():
             tmp.append(i * j)
         lst.append(tmp)
     print(lst)
-#number_7()
+
+
+# number_7()
 
 def number_8():
     text = str(input("Enter text: "))
     n = sorted(text.split(','))
     print(n)
-#number_8()
+
+
+# number_8()
 
 def number_9():
     lst = []
@@ -79,9 +95,11 @@ def number_9():
         lst.append(x.upper())
     for upp in lst:
         print(upp)
-#number_9()
+
+
+# number_9()
 
 def number_10():
     text = sorted(list(set(input().split())))
     print(" ".join(text))
-#number_10()
+# number_10()

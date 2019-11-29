@@ -1,5 +1,6 @@
 import re
 
+
 def number_11():
     items = []
     num = [x for x in input().split(',')]
@@ -8,7 +9,9 @@ def number_11():
         if not x % 5:
             items.append(p)
     print(','.join(items))
-#number_11()
+
+
+# number_11()
 
 def number_12():
     items = []
@@ -17,7 +20,9 @@ def number_12():
         if (int(s[0]) % 2 == 0) and (int(s[1]) % 2 == 0) and (int(s[2]) % 2 == 0) and (int(s[3]) % 2 == 0):
             items.append(s)
     print(",".join(items))
-#number_12()
+
+
+# number_12()
 
 def number_13():
     s = input("Input a string ")
@@ -31,7 +36,9 @@ def number_13():
             pass
     print("Letters", l)
     print("Numbers", n)
-#number_13()
+
+
+# number_13()
 
 def number_14():
     phrase = input("Input: ")
@@ -46,18 +53,24 @@ def number_14():
             pass
     print("UPPER:", u)
     print("lower:", l)
-#number_14()
+
+
+# number_14()
 
 def number_15():
     a = input("Input:")
     value = int(a) + int(2 * a) + int(3 * a) + int(4 * a)
     print(value)
-#number_15()
+
+
+# number_15()
 
 def number_16():
     lst = [str(int(i) ** 2) for i in input().split(',') if int(i) % 2]
     print(",".join(lst))
-#number_16()
+
+
+# number_16()
 
 def number_17():
     result = 0
@@ -71,7 +84,9 @@ def number_17():
         if sum == 'W':
             result -= int(num)
     print(result)
-#number_17()
+
+
+# number_17()
 
 def number_18():
     val = []
@@ -95,17 +110,23 @@ def number_18():
             pass
         val.append(p)
     print(",".join(val))
-#number_18()
+
+
+# number_18()
 
 def number_19():
     info = input()
     info_list = (case.split(',') for case in info.split(' '))
     print(sorted(info_list))
-#number_19()
+
+
+# number_19()
 
 class Twenty:
-    def number_20(self,n):
-        return [i for i in range(n+1) if i%7==0]
+    def number_20(self, n):
+        return [i for i in range(n + 1) if i % 7 == 0]
+
+
 n = int(input())
 num = Twenty()
 lst = num.number_20(n)

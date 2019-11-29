@@ -3,7 +3,9 @@ def number_61_62():
     s = input()
     u = s.encode('utf-8')
     print(u)
-#number_61()
+
+
+# number_61()
 
 def number_63():
     n = int(input())
@@ -11,21 +13,27 @@ def number_63():
     for i in range(1, n + 1):
         sum += i / (i + 1)
     print(round(sum, 2))
-#number_63()
+
+
+# number_63()
 
 def number_64(n):
     if n == 0:
         return 0
-    return number_64(n-1) + 100
-#n = int(input())
-#print(number_64(n))
+    return number_64(n - 1) + 100
+
+
+# n = int(input())
+# print(number_64(n))
 
 def number_65_66(n):
     if n < 2:
         return n
-    return number_65_66(n-1) + number_65_66(n-2)
-#n = int(input())
-#print(number_65_66(n))
+    return number_65_66(n - 1) + number_65_66(n - 2)
+
+
+# n = int(input())
+# print(number_65_66(n))
 
 """def number_67(n):
     if n < 2:
@@ -53,6 +61,7 @@ for i in number_68(n):
     val.append(str(i))
 print(",".join(val))"""
 
+
 def number_69():
     n = int(input())
     val = []
@@ -60,12 +69,12 @@ def number_69():
         if i % 5 == 0 and i % 7 == 0:
             val.append(str(i))
     print(",".join(val))
-#number_69()
+
+
+# number_69()
 
 def number_70():
     lst = [2, 4, 5, 6]
     for i in lst:
         assert i % 2 == 0, "{} is not an even number".format(i)
-#number_70()
-
-
+# number_70()
