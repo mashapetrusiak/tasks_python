@@ -59,19 +59,19 @@ except:
 """class CustomException(Exception):
     def __init__(self, message):
         self.message = message
-num = int(input())
+num = str(input())
 try:
-    if num < 100:
-        raise CustomException("Input is less than 100")
-    elif num > 100:
-        raise CustomException("Input is grater than 100")
-    elif num == 100:
-        raise CustomException("Input is equal to 100")
+    if len(num) < 10:
+        raise CustomException("Input is less than 10")
+    elif len(num) > 10:
+        raise CustomException("Input is grater than 10")
+    elif len(num) == 10:
+        raise CustomException("Input is equal to 10")
 except CustomException as ce:
     print("The error: " + ce.message)"""
 
 def number_57():
-    email = str(input().split(""))
+    email = str(input().split())
     email = email.split('@')
     print(email[0])
 #number_57()
