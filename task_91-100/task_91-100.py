@@ -3,12 +3,14 @@ import itertools
 
 def number_91():
     lst = [12, 24, 35, 70, 88, 120, 155]
+    # TRy to use enumerate()
     lst1 = [lst[i] for i in range(len(lst)) if i not in (0, 4, 5)]
     print(lst1)
 #number_91()
 
 def number_92():
     lst = [12, 24, 35, 24, 88, 120, 155]
+    # you need only lstn = [x for x in lst if x!=24]
     for x in range(lst.count(24)):
         lst.remove(24)
     print(lst)
@@ -20,6 +22,7 @@ def number_93():
     set1 = set(lst1)
     set2 = set(lst2)
     intersection = set1 & set2
+    # make a list
     print(intersection)
 #number_93()
 
@@ -63,6 +66,7 @@ def number_96():
 
 def number_97():
     text = input()
+    # text = text[::-1]
     text = ''.join(reversed(text))
     print(text)
 #number_97()
@@ -70,6 +74,7 @@ def number_97():
 def number_98():
     text = "H1e2l3l4o5w6o7r8l9d"
     new = ''
+    # text = text[::2]
     for i in range(len(text)):
         if i % 2 == 0:
             new += text[i]
@@ -81,6 +86,8 @@ def number_99():
 #number_99()
 
 def number_100():
+    # rabbits = 94 // 2 - 35
+    # chickens = 35 - rabbits
     def solve(numheads, numlegs):
         ns = 'No solutions!'
         for i in range(numheads + 1):
