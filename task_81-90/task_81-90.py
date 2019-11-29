@@ -1,6 +1,6 @@
 import random
 import zlib
-import time
+from timeit import Timer
 
 def number_81():
     print(random.randrange(7,16))
@@ -14,12 +14,8 @@ def number_82():
 #number_82()
 
 def number_83():
-    before = time.time()
-    for i in range(100):
-        x = 1 + 1
-    after = time.time()
-    execution_time = after - before
-    print(execution_time)
+    t = Timer("for i in range(0,101):1+1")
+    return t.timeit()
 #number_83()
 
 def number_84_85():
