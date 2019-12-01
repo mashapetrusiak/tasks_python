@@ -16,7 +16,7 @@ def number_82():
 def number_83():
     t = Timer("for i in range(0,101):1+1")
     return t.timeit()
-#number_83()
+#print(number_83())
 
 def number_84_85():
     lst = [3, 6, 7, 8]
@@ -37,8 +37,8 @@ def number_86():
 def number_87():
     lst1 = [5, 6, 77, 45, 22, 12, 24]
     lst = list(filter(lambda n: n % 2 != 0, lst1))
-    print(lst)
-#number_87()
+    return lst
+#print(number_87())
 
 def number_88():
     lst1 = [12, 24, 35, 70, 88, 120, 155]
