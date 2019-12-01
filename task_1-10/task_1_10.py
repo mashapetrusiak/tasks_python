@@ -2,19 +2,22 @@ import math
 
 
 def number_1():
+    list = []
     for i in range(2000, 3201):
         if i % 7 == 0 and i % 5 != 0:
-            print(i, end=',')
+            list.append(i)
+
+    return list
 
 
-# number_1()
+# print(number_1())
 
 # n = int(input("n= "))
 def number_2(n):
     fact = 1
     for i in range(1, n + 1):
         fact = fact * i
-    print(fact)
+    return fact
 
 
 # number_2(n)
@@ -24,19 +27,18 @@ def number_3(n):
     mydict = {}
     for i in range(1, n + 1):
         mydict[i] = i * i
-    print(mydict)
+    return mydict
 
 
 # number_3(n)
 
-def number_4():
-    mylist = input().split(',')
+def number_4(n):
+    mylist = n.split(',')
     mytuple = tuple(mylist)
-    print(mylist)
-    print(mytuple)
+    return print(mylist), print(mytuple)
 
+# number_4("1")
 
-# number_4()
 
 class Mystring:
     def __init__(self):
@@ -91,7 +93,7 @@ def number_9():
     while True:
         x = input()
         if x == 'break':
-            break;
+            break
         lst.append(x.upper())
     for upp in lst:
         print(upp)
