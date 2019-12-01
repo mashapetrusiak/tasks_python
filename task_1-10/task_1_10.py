@@ -48,60 +48,54 @@ class Mystring:
         self.string = input()
 
     def printString(self):
-        print(self.string.upper())
+        return self.string.upper()
 
 
 # mystring = Mystring()
 # mystring.getString()
 # mystring.printString()
 
-def number_6():
+def number_6(d):
+    d = d.split(',')
     C = 50
     H = 30
     val = []
-    items = [x for x in input('D = ').split(',')]
+    items = [x for x in d]
     for D in items:
         val.append(str(int(round(math.sqrt(2 * C * float(D) / H)))))
-    print(','.join(val))
+    return ','.join(val)
 
+# d = input()
+# print(number_6(d))
 
-# number_6()
-
-def number_7():
-    x, y = map(int, input().split(','))
+def number_7(d):
+    x, y = map(int, d.split(','))
     lst = []
     for i in range(x):
         tmp = []
         for j in range(y):
             tmp.append(i * j)
         lst.append(tmp)
-    print(lst)
+    return lst
 
+# d = input()
+# print(number_7(d))
 
-# number_7()
-
-def number_8():
-    text = str(input("Enter text: "))
+def number_8(text):
     n = sorted(text.split(','))
-    print(n)
+    return ','.join(n)
 
 
-# number_8()
+# print(number_8("without,hello,bag,world"))
 
-def number_9():
-    lst = []
-    while True:
-        x = input()
-        if x == 'break':
-            break
-        lst.append(x.upper())
-    for upp in lst:
-        print(upp)
+def number_9(x):
+    return x.upper()
 
 
-# number_9()
+# print(number_9(input()))
 
-def number_10():
-    text = sorted(list(set(input().split())))
-    print(" ".join(text))
-# number_10()
+def number_10(x):
+    text = sorted(list(set(x.split())))
+    return " ".join(text)
+
+# print(number_10(input()))
