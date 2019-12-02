@@ -37,11 +37,10 @@ def number_13(s):
     return "LETTER " + str(l) + "\n" + "NUMBERS " + str(n)
 
 
-input(number_13(input()))
+# input(number_13(input()))
 
 
-def number_14():
-    phrase = input("Input: ")
+def number_14(phrase):
     phrase = list(phrase)
     u, l = 0, 0
     for i in phrase:
@@ -51,31 +50,31 @@ def number_14():
             l = l + 1
         else:
             pass
-    print("UPPER:", u)
-    print("lower:", l)
+    return "upper: " + str(u) + "\n" + "lower: " + str(l)
 
 
-# number_14()
+# print(number_14(input()))
 
-def number_15():
-    a = input("Input:")
+
+def number_15(a):
     value = int(a) + int(2 * a) + int(3 * a) + int(4 * a)
-    print(value)
+    return value
 
 
-# number_15()
+# print(number_15(input()))
 
-def number_16():
-    lst = [str(int(i) ** 2) for i in input().split(',') if int(i) % 2]
-    print(",".join(lst))
+def number_16(x):
+    lst = [str(int(i) ** 2) for i in x.split(',') if int(i) % 2]
+    return ",".join(lst)
 
 
-# number_16()
+# print(number_16(input()))
 
-def number_17():
+
+def number_17(x):
     result = 0
     while True:
-        s = input().split()
+        s = x.split()
         if not s:
             break
         sum, num = map(str, s)
@@ -86,11 +85,11 @@ def number_17():
     print(result)
 
 
-# number_17()
+# print(number_17(input()))
 
-def number_18():
+def number_18(s):
     val = []
-    items = [x for x in input().split(',')]
+    items = [x for x in s.split(',')]
     for p in items:
         if len(p) < 6 or len(p) > 12:
             continue
@@ -109,18 +108,17 @@ def number_18():
         else:
             pass
         val.append(p)
-    print(",".join(val))
+    return ",".join(val)
 
 
-# number_18()
-
-def number_19():
-    info = input()
+# print(number_18(input()))
+#
+def number_19(info):
     info_list = (case.split(',') for case in info.split(' '))
-    print(sorted(info_list))
+    return sorted(info_list)
 
 
-# number_19()
+# print(number_19(input()))
 
 class Twenty:
     def number_20(self, n):
@@ -128,6 +126,6 @@ class Twenty:
 
 
 # n = int(input())
-num = Twenty()
+# num = Twenty()
 # lst = num.number_20(n)
 # print(lst)
