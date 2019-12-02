@@ -1,17 +1,17 @@
 import re
 
 
-def number_11():
+def number_11(y):
     items = []
-    num = [x for x in input().split(',')]
+    num = [x for x in y.split(',')]
     for p in num:
         x = int(p, 2)
         if not x % 5:
             items.append(p)
-    print(','.join(items))
+    return items
 
 
-# number_11()
+# print(number_11(input()))
 
 def number_12():
     items = []
@@ -19,13 +19,13 @@ def number_12():
         s = str(i)
         if (int(s[0]) % 2 == 0) and (int(s[1]) % 2 == 0) and (int(s[2]) % 2 == 0) and (int(s[3]) % 2 == 0):
             items.append(s)
-    print(",".join(items))
+    return ",".join(items)
 
 
-# number_12()
+# print(number_12())
 
-def number_13():
-    s = input("Input a string ")
+
+def number_13(s):
     n = l = 0
     for i in s:
         if i.isdigit():
@@ -34,11 +34,11 @@ def number_13():
             l = l + 1
         else:
             pass
-    print("Letters", l)
-    print("Numbers", n)
+    return "LETTER " + str(l) + "\n" + "NUMBERS " + str(n)
 
 
-# number_13()
+input(number_13(input()))
+
 
 def number_14():
     phrase = input("Input: ")
@@ -127,7 +127,7 @@ class Twenty:
         return [i for i in range(n + 1) if i % 7 == 0]
 
 
-n = int(input())
+# n = int(input())
 num = Twenty()
-lst = num.number_20(n)
-print(lst)
+# lst = num.number_20(n)
+# print(lst)
