@@ -61,18 +61,18 @@ class Square(Shape):
 
 
 Asqr = Square(16)
-# print(Asqr.area())
-# print(Square().area())
-"""
-def number_55():
-    return 5/0
-try:
-    number_55()
-except ZeroDivisionError as zero:
-    print("You are dividing a number by ZERO!")
-except:
-    print("Other exception") """
+print(Asqr.area())
+print(Square().area())
 
+
+def number_55():
+    try:
+        5 / 0
+    except:
+        return "You are dividing a number by ZERO!"
+
+
+print(number_55())
 """class CustomException(Exception):
     def __init__(self, message):
         self.message = message
@@ -88,35 +88,35 @@ except CustomException as ce:
     print("The error: " + ce.message)"""
 
 
-def number_57():
-    email = str(input().split())
+def number_57(x):
+    email = str(x.split())
     email = email.split('@')
-    print(email[0])
+    return email[0]
 
 
-# number_57()
+# print(number_57("john@google.com"))
 
-def number_58():
-    email = str(input().split(""))
+def number_58(x):
+    email = str(x.split())
     pattern = "\w+@(\w+).com"
     ans = re.findall(pattern, email)
-    print(ans)
+    return ans
 
 
 # number_58()
 
-def number_59():
-    words = input().split()
+def number_59(x):
+    words = x.split()
     lst = []
     for word in words:
         if word.isdigit():
             lst.append(word)
-    print(lst)
+    return lst
 
 
-# number_59()
+# print(number_59("2 cats and 3 dogs"))
 
 def number_60():
     unicode = u"hello world!"
-    print(unicode)
-# number_60()
+    return unicode
+print(number_60())
