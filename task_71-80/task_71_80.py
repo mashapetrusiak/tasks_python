@@ -2,10 +2,9 @@ import math
 import random
 
 
-def number_71():
-    expression = input()
+def number_71(expression):
     result = eval(expression)
-    print(result)
+    return result
 
 
 # number_71()
@@ -31,42 +30,42 @@ def number_72_73(lst, el):
 
 def number_74():
     rand_num = random.uniform(10, 100)
-    print(rand_num)
+    return rand_num
 
 
-# number_74()
+print(number_74())
 
 def number_75():
     rand_num = random.uniform(5, 95)
-    print(rand_num)
+    return rand_num
 
 
 # number_75()
 
 def number_76():
     result = [i for i in range(0, 11, 2)]
-    print(random.choice(result))
+    return random.choice(result)
 
 
 # number_76()
 
 def number_77():
     result = [i for i in range(0, 11) if i % 5 == 0 and i % 7 == 0]
-    print(random.choice(result))
+    return random.choice(result)
 
 
-# number_77()
+print(number_77())
 
 def number_78():
     result = random.sample(range(100, 201), 5)
-    print(result)
+    return result
 
 
 # number_78()
 
 def number_79():
     result = random.sample(range(100, 201, 2), 5)
-    print(result)
+    return result
 
 
 # number_79()
@@ -74,5 +73,5 @@ def number_79():
 def number_80():
     lst = [i for i in range(1, 1001) if i % 5 == 0 and i % 7 == 0]
     result = random.sample(lst, 5)
-    print(result)
+    return result
 # number_80()
