@@ -1,6 +1,7 @@
 import unittest
 from task_31_40 import *
 
+
 class MyTestCase(unittest.TestCase):
 
     def setUp(self) -> None:
@@ -92,7 +93,7 @@ class MyTestCase(unittest.TestCase):
     def test_number_34_check_middle(self):
         output = number_34()
         expected = 100
-        self.assertEqual(output[len(output)//2], expected)
+        self.assertEqual(output[len(output) // 2], expected)
 
     def test_number_34_check_keys_range_last(self):
         self.assertNotIn(21, number_34().keys())
@@ -185,8 +186,6 @@ class MyTestCase(unittest.TestCase):
         expected = 441
         output = number_40()
         self.assertNotIn(expected, output)
-
-
 
 
 if __name__ == '__main__':
