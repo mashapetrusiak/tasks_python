@@ -1,18 +1,17 @@
-def number_61_62():
+def number_61_62(s):
     # -*- coding: utf-8 -*-
-    s = input()
     u = s.encode('utf-8')
-    print(u)
+    return u
 
 
-# number_61()
+# print(number_61_62("hello"))
 
-def number_63():
-    n = int(input())
+def number_63(x):
+    n = int(x)
     sum = 0
     for i in range(1, n + 1):
         sum += i / (i + 1)
-    print(round(sum, 2))
+    return round(sum, 2)
 
 
 # number_63()
@@ -35,19 +34,16 @@ def number_65_66(n):
 # n = int(input())
 # print(number_65_66(n))
 
-"""def number_67(n):
-    if n < 2:
-        fib[n] = n
-        return fib[n]
-    fib[n] = number_67(n-1) + number_67(n-2)
-    return fib[n]
-
-n = int(input())
-fib = [0]*(n+1)
-number_67(n)
-fib = [str(i) for i in fib]
-lst = ",".join(fib)
-print(lst)"""
+# def task_67(n):
+#     if n == 0:
+#         print(0)
+#         return 0
+#     elif n == 1:
+#         print(1)
+#         return 1
+#     else:
+#         print(task_65(n - 1) + task_65(n - 2))
+#         return task_65(n - 1) + task_65(n - 2)
 
 """def number_68(n):
     i=0
@@ -62,19 +58,19 @@ for i in number_68(n):
 print(",".join(val))"""
 
 
-def number_69():
-    n = int(input())
+def number_69(x):
+    n = int(x)
     val = []
     for i in range(n + 1):
         if i % 5 == 0 and i % 7 == 0:
             val.append(str(i))
-    print(",".join(val))
+    return ",".join(val)
 
 
-# number_69()
+# print(number_69(100))
 
 def number_70():
     lst = [2, 4, 5, 6]
     for i in lst:
         assert i % 2 == 0, "{} is not an even number".format(i)
-# number_70()
+number_70()
